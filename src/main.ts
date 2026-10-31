@@ -11,12 +11,12 @@ if (!debugCanvas) {
     throw Error("Debug canvas not found!")
 }
 
-const drawingContext = drawingCanvas.getContext("2d")
+const drawingContext = drawingCanvas.getContext("2d")!
 if (!drawingContext) {
     throw Error("Canvas context cant be retrieved!")
 }
 
-const debugContext = debugCanvas.getContext("2d")
+const debugContext = debugCanvas.getContext("2d")!
 if (!debugContext) {
     throw Error("Canvas context cant be retrieved!")
 }
